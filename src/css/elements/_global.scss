@@ -1,0 +1,11 @@
+@use 'settings/color' as color;
+@use 'settings/font-family' as ff;
+
+html {
+  font-family: ff.$poppins;
+  font-size: 10px;
+  color: color.$text;
+  font-style: normal;
+  scroll-behavior: smooth;
+  background-color: color.$black-0a;
+}

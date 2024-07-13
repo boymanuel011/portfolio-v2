@@ -1,0 +1,15 @@
+// Globals
+@use 'elements/reset';
+@use 'elements/global';
+
+// Components
+// // Common
+@use 'components/common/header.scss';
+@use 'components/common/footer.scss';
+
+// // Page
+
+@use 'components/pages/portfolio';
+
+// Trumps
+@use 'trumps/helper';

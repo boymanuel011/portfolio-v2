@@ -1,0 +1,198 @@
+extends includes/layout.pug
+block variables
+  - pageTitle = 'portfolio'
+  - page_title = 'Portfolio'
+  - 
+    var page_metatags = [
+      {name: 'description', content: 'Top Page'}, 
+    ]
+
+block content
+  .portfolio__container
+    .portfolio__mv
+      video.portfolio__mv-video.js-video(muted="true" playsinline="true")
+        source(src="/public/vid/mv.mp4" type="video/mp4")
+        |お使いのブラウザはvideoタグをサポートしていません。
+      .portfolio__mv-container
+        .portfolio__mv-content-wrap
+          span.portfolio__mv-title-greet Hi, I'm<br>
+          h1.portfolio__mv-title Mico Manuel
+          .portfolio__mv-animate-wrap
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="0") F
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="50") r
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="100") o
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="150") n
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="200") t
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="250") -
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="300") E
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="350") n
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="400") d
+            span.portfolio__mv-title-animate &nbsp;
+            |#[br.sp-brk]
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="500") W
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="550") e
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="600") b
+            span.portfolio__mv-title-animate &nbsp; #[br]
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="650") D
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="700") e
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="750") v
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="800") e
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="850") l
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="900") o
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="950") p
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="1000") e
+            span.portfolio__mv-title-animate(data-aos="flip-left" data-aos-delay="1050") r
+          p.portfolio__mv-text-desc Hello! I'm a Front-End Web Developer with over 2 years in the field. I bring design concepts to life by creating user-friendly and responsive websites that align with business goals and enhance user experience.
+          a.portfolio__mv-cv(href="/public/pdf/Manuel-CV.pdf" download="") Download CV
+    .portfolio__about(data-aos="fade-up" data-aos-duration="1500")#about
+      .portfolio__about-container
+        h2.portfolio__section-title
+           span A
+           span B
+           span O
+           span U
+           span T
+        .portfolio__section-content
+          .portfolio__about-content-wrap
+            .portfolio__about-col-left
+              .portfolio__about-img-wrap
+                img.portfolio__about-img(src="/public/img/about-me.jpg" alt="")
+            .portfolio__about-col-right
+              .portfolio__about-block
+                h3.portfolio__about-block-title About Me
+                p.portfolio__about-txt Hello! I'm Mico, a passionate and dedicated Front-End Web Developer with over 2 years of experience in creating static, dynamic, and user-friendly websites. My expertise lies in translating design concepts into high-quality, interactive digital experiences that delight users and meet business objectives.
+                h3.portfolio__about-block-title My Journey
+                .portfolio__about-txt My journey into web development began with a curiosity about how websites are built and a love for creative problem-solving. Over the years, I've honed my skills in HTML, CSS, JavaScript, and modern frameworks like ReactJS. I thrive in collaborative environments, working closely with designers and other web developers to bring ideas to life.
+                h3.portfolio__about-block-title What I Do
+                p.portfolio__about-txt
+                  span Responsive Web Design:
+                  |Crafting pixel-perfect, responsive designs that ensure a seamless user experience across all devices. #[br]
+                  span Modern Development Practices:
+                  |Utilizing the latest tools and technologies such as SASS, Gulp, and Git to deliver efficient and maintainable code. #[br]
+                  span Performance Optimization:
+                  |Implementing best practices for web performance, ensuring fast load times and smooth user interactions.
+              ul.portfolio__about-skill
+                li.portfolio__about-skill-item HTML
+                  span
+                li.portfolio__about-skill-item CSS
+                  span
+                li.portfolio__about-skill-item Java Script
+                  span
+                li.portfolio__about-skill-item React JS
+                  span
+                li.portfolio__about-skill-item Wordpress
+                  span
+                li.portfolio__about-skill-item Shopify
+                  span
+    .portfolio__works(data-aos="fade-up" data-aos-duration="1500")#works
+      .portfolio__works-container
+        h2.portfolio__section-title
+          span W
+          span O
+          span R
+          span K
+          span S
+        .portfolio__works-desc These are the projects that I've been a part of as one of the team members, either created from scratch or enhanced with additional features on existing websites.
+        .portfolio__works-slider-wrap
+          .portfolio__works-slider.splide.js-works-slider1
+            .splide__track
+              ul.portfolio__works-slide-list.splide__list
+                li.portfolio__works-slide.splide__slide
+                  img.portfolio__work-slide-img(src="/public/img/tmtc.png" alt="tmtc")
+                  a.portfolio__works-slide-link(href="https://tmtc.jp/" target="_blank")
+                    .portfolio__work-slide-desc
+                      h4.portfolio__work-slide-title TM-Tech
+                      span.portfolio__work-slide-txt For all your housing equipment needs, leave it to TM Tech.
+                li.portfolio__works-slide.splide__slide
+                  img.portfolio__work-slide-img(src="/public/img/t&c-ec.jpg" alt="t&c-ec")
+                  a.portfolio__works-slide-link(href="https://grand-askey.jp/shop/" target="_blank")
+                    .portfolio__work-slide-desc
+                      h4.portfolio__work-slide-title Grand Askey
+                      span.portfolio__work-slide-txt It's up to you to decide whether your own style is cool or uncool.
+                li.portfolio__works-slide.splide__slide
+                  img.portfolio__work-slide-img(src="/public/img/nakabachi.jpeg" alt="nakabachi")
+                  a.portfolio__works-slide-link(href="https://inheritjapanese.com/" target="_blank")
+                    .portfolio__work-slide-desc
+                      h4.portfolio__work-slide-title Nakabachi
+                      span.portfolio__work-slide-txt Are you having trouble with the tedious and detailed applications and procedures for construction business permits, drone flight permits, or inheritance and wills ?
+                li.portfolio__works-slide.splide__slide
+                  img.portfolio__work-slide-img(src="/public/img/nudge.jpg" alt="nudge")
+                  a.portfolio__works-slide-link(href="https://www.nudge-web.com/" target="_blank")
+                    .portfolio__work-slide-desc
+                      h4.portfolio__work-slide-title Nudge
+                      span.portfolio__work-slide-txt Creating a website to help local businesses meet new customers
+        .portfolio__works-slider-wrap
+          .portfolio__works-slider.splide.js-works-slider2
+            .splide__track
+              ul.portfolio__works-slide-list.splide__list
+                li.portfolio__works-slide.splide__slide
+                  img.portfolio__work-slide-img(src="/public/img/aircon-club.jpg" alt="aircon-club")
+                  a.portfolio__works-slide-link(href="https://aircon-club.com/" target="_blank")
+                    .portfolio__work-slide-desc
+                      h4.portfolio__work-slide-title Aircon Club
+                      span.portfolio__work-slide-txt We make both the amount and the work visible, providing our customers with trust and peace of mind.
+                li.portfolio__works-slide.splide__slide
+                  img.portfolio__work-slide-img(src="/public/img/click-leasing.png" alt="click-leasing")
+                  a.portfolio__works-slide-link(href="https://click-leasing.upward-test2.info/" target="_blank")
+                    .portfolio__work-slide-desc
+                      h4.portfolio__work-slide-title Click Leasing
+                      span.portfolio__work-slide-txt Just register and you will be matched with a tenant developer.
+                li.portfolio__works-slide.splide__slide
+                  img.portfolio__work-slide-img(src="/public/img/konkengyo.jpg" alt="konkengyo")
+                  a.portfolio__works-slide-link(href="https://konkengyo.upward-test2.info/" target="_blank")
+                    .portfolio__work-slide-desc
+                      h4.portfolio__work-slide-title Konkengyo
+                      span.portfolio__work-slide-txt Creating the future of Japan as a comprehensive dismantling company
+                li.portfolio__works-slide.splide__slide
+                  img.portfolio__work-slide-img(src="/public/img/wamiles.jpg" alt="wamiles")
+                  a.portfolio__works-slide-link(href="https://www.wamiles.co.jp/" target="_blank")
+                    .portfolio__work-slide-desc
+                      h4.portfolio__work-slide-title Wamiles
+                      span.portfolio__work-slide-txt Wamiles Salon is a place where people can gather. It is a place where beauty can be cultivated through salon care, and where people can meet and connect with others who want to enhance their beauty.
+    .portfolio__contact(data-aos="fade-up" data-aos-duration="1200")#contact
+      .portfolio__contact-container
+        h2.portfolio__section-title
+          span C
+          span O
+          span N
+          span T
+          span A
+          span C
+          span T
+        .portfolio__contact-wrap
+          form.portfolio__contact-form(action="https://formsubmit.co/mico.manuel1105@gmail.com" method="POST")
+            .portfolio__contact-form-row
+              label.portfolio__contact-form-label(for="name") Your Name
+              input.portfolio__contact-form-input(type="text" name="name" id="")
+            .portfolio__contact-form-row
+              label.portfolio__contact-form-label(for="email") Your Email
+              input.portfolio__contact-form-input(type="email" name="email" id="")
+            .portfolio__contact-form-row
+              label.portfolio__contact-form-label(for="message") Description
+              textarea.portfolio__contact-form-input(name="message" id="message" rows="10")
+            button.portfolio__contact-form-submit(type="submit") SEND
+          .portfolio__contact-desc-wrap
+            h3.portfolio__contact-title Get in &nbsp;
+              span T
+              span o
+              span u
+              span c
+              span h
+            .portfolio__contact-desc I would love to hear from you! Whether you have a question about web development, need help with a project, want to discuss your website's design, or anything else, I'm here to assist you. Feel free to reach out!
+            .portfolio__contact-detail-wrap
+              h4.portfolio__contact-detail-txt Address : #[br]
+                span 821 Nanaimo Street Vancouver British Columbia V5L4S8
+              h4.portfolio__contact-detail-txt Mobile No. : #[br]
+                span 604-352-5062
+              h4.portfolio__contact-detail-txt Email :<br>
+                span mico.manuel1105@gmail.com    
+block customize_script
+  script(src="js/common/index.js")
+  script.
+      AOS.init({ once: true });
+
+      var lazyLoadInstance = new LazyLoad();
+
+      window.addEventListener('load', () => {
+        lazyLoadInstance.update();
+      });
