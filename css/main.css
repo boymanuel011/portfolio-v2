@@ -340,14 +340,14 @@ html {
   }
 }
 .portfolio__mv-title {
-  font-size: 110px;
+  font-size: 120px;
   font-weight: 900;
   color: #cad7f2;
   line-height: 1em;
 }
 @media screen and (max-width: 1200px) {
   .portfolio__mv-title {
-    font-size: 90px;
+    font-size: 100px;
   }
 }
 @media screen and (max-width: 980px) {
@@ -561,18 +561,18 @@ html {
   }
 }
 .portfolio__mv-text-desc {
-  font-size: 16px;
+  font-size: 20px;
   color: #8592ac;
   max-width: 900px;
 }
 @media screen and (max-width: 980px) {
   .portfolio__mv-text-desc {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 767px) {
   .portfolio__mv-text-desc {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 10px;
   }
 }
@@ -582,7 +582,7 @@ html {
   display: inline-block;
   text-decoration: none;
   border: 1px solid;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 5px;
   color: #56dac2;
   margin-top: 20px;
@@ -881,10 +881,10 @@ html {
   width: 70%;
 }
 .portfolio__about-skill-item:nth-child(4) span::before {
-  left: 50%;
+  left: 30%;
 }
 .portfolio__about-skill-item:nth-child(4) span::after {
-  width: 50%;
+  width: 30%;
 }
 .portfolio__about-skill-item:nth-child(5) span::before {
   left: 50%;
